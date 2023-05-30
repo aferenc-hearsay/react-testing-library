@@ -1,0 +1,1 @@
+export { TestingMaterialsPage } from './TestingMaterialsPage';
