@@ -1,10 +1,11 @@
-import { Table } from '../../Atomic/Table';
-import { testingLibraryPageContent } from './testingLibraryPageContent';
-import { Article } from '../../Atomic/Article';
+import { Table } from '../../atomic/Table';
+import { testingLibraryPageContent, testingLibraryPageTitle } from './testingLibraryPageContent';
+import { Article } from '../../atomic/Article';
 
 export const TestingLibraryPage = () => {
     return (
         <>
+            <h1>{testingLibraryPageTitle}</h1>
             <h2>{testingLibraryPageContent.queries.description}</h2>
             <Table table={testingLibraryPageContent.queries} />
             <Article article={testingLibraryPageContent.priority} />

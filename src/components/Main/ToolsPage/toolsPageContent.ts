@@ -1,4 +1,20 @@
-import { ITable } from '../../../types/interfaces';
+import { IPageContent, ITable } from '../../../types/interfaces';
+
+export const toolsPageContent: IPageContent = {
+    title: 'Testing Tools',
+    articles: [
+        {
+            sequenceId: 0,
+            articleTitle: 'Tools for frontend testing',
+            sections: [
+                {
+                    sectionSequenceId: 0,
+                    content: '<p>There are many tools for testing frontend applications. The most popular are:</p>',
+                },
+            ],
+        },
+    ],
+}
 
 export const toolsTable: ITable = {
     description: 'Test tools for React applications',

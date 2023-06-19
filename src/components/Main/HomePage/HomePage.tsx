@@ -1,5 +1,5 @@
 import { homePageContent } from './homePageContent';
-import { Article } from '../../Atomic/Article';
+import { Article } from '../../atomic/Article';
 
 export const HomePage = () => {
     return (

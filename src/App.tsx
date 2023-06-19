@@ -2,8 +2,8 @@ import React from 'react';
 import './App.module.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ROUTES } from './constants';
-import { NavigationBar } from './Components/NavigationBar';
-import { Main } from './Components/Main';
+import { NavigationBar } from './components/NavigationBar';
+import { Main } from './components/Main';
 
 function App() {
     return (

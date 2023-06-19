@@ -5,6 +5,7 @@ import { HomePage } from './HomePage';
 import { ToolsPage } from './ToolsPage';
 import { TestingLibraryPage } from './TestingLibraryPage';
 import { TestingMaterialsPage } from './TestingMaterialsPage';
+import { ESLintTestingLibraryPage } from './ESLintTestingLibraryPage';
 
 export const Main: React.FC<IMainFC> = ({ type }) => {
     switch (type) {
@@ -16,6 +17,8 @@ export const Main: React.FC<IMainFC> = ({ type }) => {
             return <TestingLibraryPage />;
         case ROUTES[3].type:
             return <TestingMaterialsPage />;
+        case ROUTES[4].type:
+            return <ESLintTestingLibraryPage/>;
         default:
             return <></>;
     }

@@ -25,4 +25,10 @@ export const ROUTES: IRoute[] = [
         title: 'Test Materials',
         type: 'testMaterials',
     },
+    {
+        id: 4,
+        value: 'eslint-testing-library',
+        title: 'ESLint Testing Library',
+        type: 'eslintTestingLibrary',
+    },
 ];

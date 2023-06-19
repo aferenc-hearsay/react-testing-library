@@ -1,5 +1,8 @@
 import { IArticle, ITable } from '../../../types/interfaces';
 
+export const testingLibraryPageTitle = 'React Testing Library';
+
+
 export const testingLibraryPageContent: { queries: ITable; priority: IArticle; roles: IArticle } = {
     queries: {
         description: 'Summary of query types',
