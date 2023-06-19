@@ -14,7 +14,7 @@ export const toolsPageContent: IPageContent = {
             ],
         },
     ],
-}
+};
 
 export const toolsTable: ITable = {
     description: 'Test tools for React applications',

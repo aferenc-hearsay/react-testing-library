@@ -18,7 +18,7 @@ export const Main: React.FC<IMainFC> = ({ type }) => {
         case ROUTES[3].type:
             return <TestingMaterialsPage />;
         case ROUTES[4].type:
-            return <ESLintTestingLibraryPage/>;
+            return <ESLintTestingLibraryPage />;
         default:
             return <></>;
     }
