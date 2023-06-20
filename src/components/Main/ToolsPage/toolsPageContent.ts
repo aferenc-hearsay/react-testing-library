@@ -69,11 +69,11 @@ export const toolsTable: ITable = {
             content: [
                 {
                     key: 0,
-                    content: 'Stylelint'
+                    content: 'Stylelint',
                 },
                 {
                     key: 1,
-                    content: 'CSS linter'
+                    content: 'CSS linter',
                 },
                 {
                     key: 2,
@@ -83,7 +83,7 @@ export const toolsTable: ITable = {
                     key: 3,
                     content: '',
                 },
-              ]
+            ],
         },
         {
             key: 3,
