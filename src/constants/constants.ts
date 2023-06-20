@@ -21,14 +21,14 @@ export const ROUTES: IRoute[] = [
     },
     {
         id: 3,
-        value: 'test-materials',
-        title: 'Test Materials',
-        type: 'testMaterials',
-    },
-    {
-        id: 4,
         value: 'eslint-testing-library',
         title: 'ESLint Testing Library',
         type: 'eslintTestingLibrary',
+    },
+    {
+        id: 4,
+        value: 'test-materials',
+        title: 'Test Materials',
+        type: 'testMaterials',
     },
 ];
