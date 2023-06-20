@@ -1,4 +1,109 @@
-import { IPageContent } from '../../../types/interfaces';
+import { IPageContent, ITable } from '../../../types/interfaces';
+
+export const eSLintPluginTestingLibraryRulesTable: ITable = {
+    description:
+        'Example rules supported by the plugin, and compatible with React. More rules can be found in the docs.',
+    rows: [
+        {
+            key: 0,
+            isHeader: true,
+            content: [
+                {
+                    key: 0,
+                    content: 'Rule',
+                },
+                {
+                    key: 1,
+                    content: 'Description',
+                },
+            ],
+        },
+        {
+            key: 1,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'await-async-query',
+                },
+                {
+                    key: 1,
+                    content: 'Enforce promises from async queries to be handled',
+                },
+            ],
+        },
+        {
+            key: 2,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'await-async-utils',
+                },
+                {
+                    key: 1,
+                    content: 'Enforce promises from async utils to be awaited',
+                },
+            ],
+        },
+        {
+            key: 3,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'no-await-sync-query',
+                },
+                {
+                    key: 1,
+                    content: 'Disallow unnecessary await for sync queries',
+                },
+            ],
+        },
+        {
+            key: 4,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'no-container',
+                },
+                {
+                    key: 1,
+                    content: 'Disallow the use of container methods',
+                },
+            ],
+        },
+        {
+            key: 5,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'no-debugging-utils',
+                },
+                {
+                    key: 1,
+                    content: 'Disallow the use of debugging utils, like debug',
+                },
+            ],
+        },
+        {
+            key: 6,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
+                    content: 'no-dom-import',
+                },
+                {
+                    key: 1,
+                    content: 'Disallow importing from DOM Testing Library',
+                },
+            ],
+        },
+    ],
+};
 
 export const eSLintTestingLibraryPageContent: IPageContent = {
     title: 'ESLint and Testing Library',
@@ -12,6 +117,15 @@ export const eSLintTestingLibraryPageContent: IPageContent = {
                     content:
                         '<p>As the plugin define itself, it is a plugin for ESLint that checks your code to follow best ' +
                         'practices and anticipate common mistakes when writing tests with Testing Library.</p>',
+                },
+                {
+                    sectionSequenceId: 1,
+                    content:
+                        '<p> You can find detailed documentation on the plugin\'s ' +
+                        '<a href="https://github.com/testing-library/eslint-plugin-testing-library">GitHub repository</a>. ' +
+                        'You can also find a summary of the plugin\'s rules and how to configure them on ' +
+                        '<a href="https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules">this</a> ' +
+                        'page</p>',
                 },
             ],
         },

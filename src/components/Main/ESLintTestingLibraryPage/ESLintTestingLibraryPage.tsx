@@ -1,5 +1,9 @@
-import { eSLintTestingLibraryPageContent } from './eSLintTestIngLibraryPageContent';
+import {
+    eSLintTestingLibraryPageContent,
+    eSLintPluginTestingLibraryRulesTable,
+} from './eSLintTestIngLibraryPageContent';
 import { Article } from '../../atomic/Article';
+import { Table } from '../../atomic/Table';
 
 export const ESLintTestingLibraryPage = () => {
     return (
@@ -8,6 +12,7 @@ export const ESLintTestingLibraryPage = () => {
             {eSLintTestingLibraryPageContent.articles.map(article => {
                 return <Article key={article.sequenceId} article={article} />;
             })}
+            <Table table={eSLintPluginTestingLibraryRulesTable} />
         </>
     );
 };

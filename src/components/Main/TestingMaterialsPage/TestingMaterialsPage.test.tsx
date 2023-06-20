@@ -2,12 +2,37 @@ import { render, screen } from '@testing-library/react';
 import { TestingMaterialsPage } from './TestingMaterialsPage';
 
 describe('Testing Materials page', () => {
+    // Bad practice: more assertions in one test case
     test('should render the component', () => {
         render(<TestingMaterialsPage />);
         expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/test materials/i);
         expect(screen.getByRole('button', { name: /Click me/ })).toBeInTheDocument();
         expect(screen.getByRole('textbox')).toHaveAttribute('placeholder', 'Write here');
         expect(screen.getAllByRole('listitem')).toHaveLength(3);
+        expect(screen.getAllByRole('listitem')[0]).toHaveTextContent('Item 1');
+    });
+
+    // Good practice: one or two assertion per test case
+
+    test('should render the heading', () => {
+        render(<TestingMaterialsPage />);
+        expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/test materials/i);
+    });
+
+    test('should render the button', () => {
+        render(<TestingMaterialsPage />);
+        expect(screen.getByRole('button', { name: /Click me/ })).toBeInTheDocument();
+    });
+
+    test('should render the input', () => {
+        render(<TestingMaterialsPage />);
+        expect(screen.getByRole('textbox')).toHaveAttribute('placeholder', 'Write here');
+    });
+
+    test('should render the list', () => {
+        render(<TestingMaterialsPage />);
+        expect(screen.getAllByRole('listitem')).toHaveLength(3);
+        expect(screen.getAllByRole('listitem')[0]).toHaveTextContent('Item 1');
     });
 
     test('finding article and section element types by role', () => {
@@ -29,7 +54,7 @@ describe('Testing Materials page', () => {
 
     test('should select elements by role', () => {
         render(<TestingMaterialsPage />);
-        expect(screen.getAllByRole('heading', { level: 2 })[0]).toHaveTextContent('This is a sample text');
+        expect(screen.getAllByRole('heading', { level: 2 })[0]).toHaveTextContent('Test form');
         expect(screen.getByRole('button')).toHaveAttribute('type', 'button');
         expect(screen.getByRole('textbox')).toHaveValue('');
         expect(screen.getAllByRole('listitem')).toHaveLength(3);

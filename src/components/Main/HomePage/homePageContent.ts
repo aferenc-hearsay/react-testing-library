@@ -247,38 +247,24 @@ export const homePageContent: IPageContent = {
         },
         {
             sequenceId: 3,
-            articleTitle: 'Conceptions of the Testing Library',
+            articleTitle: 'Classify tests by their role',
             sections: [
                 {
                     sectionSequenceId: 0,
-                    content:
-                        '<p><a href="https://testing-library.com/" target="_blank">Testing Library</a> is for ' +
-                        'testing rendered DOM instead of component instances. The concept is to test the ' +
-                        'application as the user would use it. The developers tried to create a simple and flexible ' +
-                        'API.<p/>',
+                    content: '<p> We can also classify tests by their role. There are three main categories:</p>',
                 },
                 {
                     sectionSequenceId: 1,
                     content:
-                        '<p>The library encourages you to avoid testing implementation details, like the internals of ' +
-                        'components. However, you can\'t access your component instances and methods in your ' +
-                        'test cases, you have to work with the real DOM elements rendering in the browser. This ' +
-                        'mindset helps you to create tests that are closer to the end user, and at the same time, ' +
-                        'it is an effective way to test UI.<p/>',
-                },
-                {
-                    sectionSequenceId: 2,
-                    content: '<p>You may have to avoid testing the following details:<p/>',
-                },
-                {
-                    sectionSequenceId: 3,
-                    content:
-                        '<ol>' +
-                        '<li>The internal state of a component</li>' +
-                        '<li>Internal methods of a component</li>' +
-                        '<li>Lifecycle methods of a component</li>' +
-                        '<li>Child components</li>' +
-                        '<ol/>',
+                        '<ul>' +
+                        '<li>Code quality checks</li>' +
+                        '<li>Functional tests</li>' +
+                        '<li>Security tests</li>' +
+                        '<li>Accessibility tests</li>' +
+                        '<li>Performance tests</li>' +
+                        '<li>Usability tests</li>' +
+                        '<li>...</li>' +
+                        '</ul>',
                 },
             ],
         },

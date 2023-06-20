@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './TestingMaterialsPage.module.scss';
 
 export const TestingMaterialsPage = () => {
     return (
@@ -7,10 +8,16 @@ export const TestingMaterialsPage = () => {
             <article>
                 <p>This page contains the HTML elements I use in the UI test cases. </p>
             </article>
-            <button type='button' data-testid={'my-button'}>
-                Click me
-            </button>
-            <input type='text' placeholder={'Write here'} />
+            <h2>Test form</h2>
+            <form className={styles.exampleForm}>
+                <label htmlFor={'textInput'} className={styles.exampleFormTitle}>
+                    Text input
+                </label>
+                <input type='text' placeholder={'Write here'} id={'textInput'} className={styles.exampleFormInput} />
+                <button type='button' data-testid={'my-button'} className={styles.exampleFormButton}>
+                    Click me
+                </button>
+            </form>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
