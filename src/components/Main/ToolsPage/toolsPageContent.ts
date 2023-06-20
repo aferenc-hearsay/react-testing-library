@@ -69,21 +69,21 @@ export const toolsTable: ITable = {
             content: [
                 {
                     key: 0,
-                    content: 'ESLint',
+                    content: 'Stylelint'
                 },
                 {
                     key: 1,
-                    content: 'Code formatting and checking',
+                    content: 'CSS linter'
                 },
                 {
                     key: 2,
-                    content: 'Formatter and linter',
+                    content: 'Linter',
                 },
                 {
                     key: 3,
                     content: '',
                 },
-            ],
+              ]
         },
         {
             key: 3,
@@ -91,7 +91,7 @@ export const toolsTable: ITable = {
             content: [
                 {
                     key: 0,
-                    content: 'SonarQube, SonarLint',
+                    content: 'ESLint',
                 },
                 {
                     key: 1,
@@ -113,6 +113,28 @@ export const toolsTable: ITable = {
             content: [
                 {
                     key: 0,
+                    content: 'SonarQube, SonarLint',
+                },
+                {
+                    key: 1,
+                    content: 'Code formatting and checking',
+                },
+                {
+                    key: 2,
+                    content: 'Formatter and linter',
+                },
+                {
+                    key: 3,
+                    content: '',
+                },
+            ],
+        },
+        {
+            key: 5,
+            isHeader: false,
+            content: [
+                {
+                    key: 0,
                     content: 'Typescript',
                 },
                 {
@@ -130,7 +152,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 5,
+            key: 6,
             isHeader: false,
             content: [
                 {
@@ -153,7 +175,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 6,
+            key: 7,
             isHeader: false,
             content: [
                 {
@@ -175,7 +197,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 7,
+            key: 8,
             isHeader: false,
             content: [
                 {
@@ -197,7 +219,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 8,
+            key: 9,
             isHeader: false,
             content: [
                 {
@@ -219,7 +241,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 9,
+            key: 10,
             isHeader: false,
             content: [
                 {
@@ -241,7 +263,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 10,
+            key: 11,
             isHeader: false,
             content: [
                 {
@@ -263,7 +285,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 11,
+            key: 12,
             isHeader: false,
             content: [
                 {
@@ -285,7 +307,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 12,
+            key: 13,
             isHeader: false,
             content: [
                 {
@@ -307,7 +329,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 13,
+            key: 14,
             isHeader: false,
             content: [
                 {
@@ -329,7 +351,7 @@ export const toolsTable: ITable = {
             ],
         },
         {
-            key: 14,
+            key: 15,
             isHeader: false,
             content: [
                 {
